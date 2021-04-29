@@ -3,7 +3,6 @@ import { Prompt } from "inferno-router";
 import {
   mdToHtml,
   randomStr,
-  markdownHelpUrl,
   toast,
   setupTribute,
   pictrsDeleteToast,
@@ -291,14 +290,6 @@ export class MarkdownTextArea extends Component<
             >
               <Icon icon="alert-triangle" classes="icon-inline" />
             </button>
-            <a
-              href={markdownHelpUrl}
-              class="btn btn-sm text-muted font-weight-bold"
-              title={i18n.t("formatting_help")}
-              rel="noopener"
-            >
-              <Icon icon="help-circle" classes="icon-inline" />
-            </a>
           </div>
         </div>
       </form>

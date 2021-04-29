@@ -32,7 +32,6 @@ import {
   setupTippy,
   getLanguage,
   mdToHtml,
-  elementUrl,
   setIsoData,
   getIdFromProps,
   getUsernameFromProps,
@@ -720,11 +719,6 @@ export class Person extends Component<any, PersonState> {
             </div>
           </div>
           <div class="form-group row">
-            <label class="col-lg-5 col-form-label" htmlFor="matrix-user-id">
-              <a href={elementUrl} rel="noopener">
-                {i18n.t("matrix_user_id")}
-              </a>
-            </label>
             <div class="col-lg-7">
               <input
                 id="matrix-user-id"

@@ -24,7 +24,6 @@ import {
   getPageTitle,
   validURL,
   capitalizeFirstLetter,
-  archiveUrl,
   debounce,
   isImage,
   toast,
@@ -211,17 +210,6 @@ export class PostForm extends Component<PostFormProps, PostFormState> {
                   onChange={linkEvent(this, this.handleImageUpload)}
                 />
               </form>
-              {this.state.postForm.url && validURL(this.state.postForm.url) && (
-                <a
-                  href={`${archiveUrl}/?run=1&url=${encodeURIComponent(
-                    this.state.postForm.url
-                  )}`}
-                  class="mr-2 d-inline-block float-right text-muted small font-weight-bold"
-                  rel="noopener"
-                >
-                  {i18n.t("archive_link")}
-                </a>
-              )}
               {this.state.imageLoading && <Spinner />}
               {isImage(this.state.postForm.url) && (
                 <img src={this.state.postForm.url} class="img-fluid" alt="" />

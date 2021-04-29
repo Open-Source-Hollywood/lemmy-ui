@@ -28,7 +28,6 @@ import {
   notifyPrivateMessage,
   isBrowser,
   wsSubscribe,
-  supportLemmyUrl,
   wsUserOp,
   wsClient,
   authField,
@@ -261,15 +260,6 @@ export class Navbar extends Component<NavbarProps, NavbarState> {
                   </Link>
                 </li>
               )}
-              <li class="nav-item">
-                <a
-                  className="nav-link"
-                  title={i18n.t("support_lemmy")}
-                  href={supportLemmyUrl}
-                >
-                  <Icon icon="heart" classes="small" />
-                </a>
-              </li>
             </ul>
             <ul class="navbar-nav my-2">
               {this.canAdmin && (

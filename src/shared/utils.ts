@@ -79,15 +79,15 @@ export const favIconUrl = "/static/assets/icons/favicon.svg";
 export const favIconPngUrl = "/static/assets/icons/apple-touch-icon.png";
 // TODO
 // export const defaultFavIcon = `${window.location.protocol}//${window.location.host}${favIconPngUrl}`;
-export const repoUrl = "https://github.com/LemmyNet";
-export const joinLemmyUrl = "https://join.lemmy.ml";
-export const supportLemmyUrl = "https://join.lemmy.ml/support";
-export const docsUrl = "https://join.lemmy.ml/docs/en/index.html";
-export const helpGuideUrl = "https://join.lemmy.ml/docs/en/about/guide.html"; // TODO find a way to redirect to the non-en folder
-export const markdownHelpUrl = `${helpGuideUrl}#markdown-guide`;
-export const sortingHelpUrl = `${helpGuideUrl}#sorting`;
-export const archiveUrl = "https://archive.is";
-export const elementUrl = "https://element.io/";
+export const repoUrl = "";
+export const joinLemmyUrl = "";
+export const supportLemmyUrl = "";
+export const docsUrl = "";
+export const helpGuideUrl = "";
+export const markdownHelpUrl = "";
+export const sortingHelpUrl = "";
+export const archiveUrl = "";
+export const elementUrl = "";
 
 export const postRefetchSeconds: number = 60 * 1000;
 export const fetchLimit = 20;
